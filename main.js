@@ -106,7 +106,7 @@ document.getElementById('bootstrapForm').addEventListener('submit', function (ev
             mode: 'cors'
         })
         .then(function (response) {
-            if (response.ok) {
+            if (response) {
                 formMessage.innerHTML = 'Thanks for your interest in gomantu!';
                 formMessage.classList.add('alert', 'alert-success');
                 // Optionally reset the form
