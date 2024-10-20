@@ -103,7 +103,7 @@ document.getElementById('bootstrapForm').addEventListener('submit', function (ev
         fetch(form.action, {
             method: 'POST',
             body: formData,
-            mode: 'cors'
+            mode: 'no-cors'
         })
         .then(function (response) {
             if (response) {
