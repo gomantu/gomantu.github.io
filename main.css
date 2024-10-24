@@ -664,6 +664,18 @@ p {
   line-height: 28px;
 }
 
+/* Hide Divider on Desktops */
+.feature-section hr {
+  display: none;
+}
+
+/* On mobile devices, show the divider */
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .feature-section hr {
+    display: block;
+  }
+}
+
 /* ======= footer css ======= */
 .footer {
   background-image: url("footer-bg.svg");
